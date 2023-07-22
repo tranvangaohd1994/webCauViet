@@ -60,34 +60,33 @@
 
 
 </style>
+<div class="container">
+	<div class="row">
+	  <div class="col-lg-4">
+		<h2><strong>Lời ngỏ</strong></h2><br>
+		<h4><strong>Quý khách hàng thân mến!</strong></h4><br>
+		<h6  style="text-align:justify"> 
+			<b>CÔNG TY CỔ PHẦN SX VÀ TM DANH THẮNG</b> xin gửi lời chào trân trọng nhất đến quý khách hàng cùng các đối tác đã và đang  quan  tâm  đặc biệt  đến  sản  phẩm và dịch vụ sản xuất găng tay, túi đựng thực phẩm của Công ty chúng tôi trong suốt thời gian qua.
+			Lĩnh vực hoạt động chính của chúng tôi chuyên về lĩnh vực sản xuất găng tay, túi đựng thực phẩm kích thước theo yêu cầu. 
+			Với phương châm <b>“UY TÍN - CHẤT LƯỢNG”</b> là nền tảng chiến lược cho sự phát triển bền vững và lâu dài của chúng tôi. 
+			Cùng với đội ngũ nhân viên nhiệt tình, giàu kinh nghiệm, cơ sở vật chất hiện đại chúng tôi đảm bảo sẽ mang đến cho Quý khách hàng những sản phẩm và dịch vụ tốt nhất với chi phí hợp lý. Chúng tôi hy vọng sẽ được hợp tác cùng Quý khách hàng. 
+			Sự ủng hộ của Quý khách hàng, Quý đối tác là nguồn động viên lớn và là động lực cho sự phát triển của Công ty chúng tôi. 
+			Công ty chúng tôi xin cảm ơn sự hợp tác, tin tưởng sử dụng sản phẩm của quý khách hàng và mong muốn được phục vụ Quý khách hàng ngày càng nhiều hơn, tận tình và chu đáo hơn nữa.
 
-	<!-- Slide1 -->
-	<section class="slide1">
-		<div class="wrap-slick1">
-			<div class="slick1">
-
-				{% slides %}
-
-				<!-- <div class="item-slick1 item2-slick1" style="background-image: url({% static 'images/master-slide-03.webp' %});">-->
-<!--					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">-->
-<!--						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">-->
-<!--							Women Collection 2018-->
-<!--						</span>-->
-<!--						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">-->
-<!--							New arrivals-->
-<!--						</h2>-->
-<!--						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">-->
-<!--							&lt;!&ndash; Button &ndash;&gt;-->
-<!--							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">-->
-<!--								Shop Now-->
-<!--							</a>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div> -->
-
-			</div>
-		</div>
-	</section>
+		</h6>
+	  </div>
+	  <div class="col-lg-8">
+		<!-- Slide1 -->
+			<section class="slide1">
+				<div class="wrap-slick1">
+					<div class="slick1">
+						{% slides %}
+					</div>
+				</div>
+			</section>
+	  </div>
+	</div>
+</div>
 
 	<!-- Category start -->
 	<style>
@@ -249,8 +248,8 @@
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/c85699cb-2813-4acd-8822-c3344fe07f17/nike-just-do-it.jpg" alt="IMG-BANNER" class="ban_img">
-
+						<!-- <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/c85699cb-2813-4acd-8822-c3344fe07f17/nike-just-do-it.jpg" alt="IMG-BANNER" class="ban_img"> -->
+						<img src="{% static 'images/sub/536d36eeeb653b3b627419.jpg' %}" alt="IMG-BANNER" class="ban_img">
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
@@ -274,7 +273,7 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/3d8a771b-0fd0-49b0-a9ad-1c688b192bf9/nike-just-do-it.jpg"  alt="IMG-BANNER" class="ban_img">
+						<img src="{% static 'images/sub/d6236eb5b33e63603a2f20.jpg' %}" alt="IMG-BANNER" class="ban_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
@@ -313,7 +312,8 @@
 	}
 </style>
 <br><br>
-<section class="slide1">
+
+<!-- <section class="slide1">
 	<div class="wrap-slick2">
 		<div class="slick1">
 			<div class="item-slick1 item2-slick1" style="background-image: url('https://static.nike.com/a/images/f_auto/dpr_2.0/w_1407,c_limit/a01665bf-08e7-4d5d-8fb6-841382e3f900/nike-just-do-it.jpg');">
@@ -335,7 +335,7 @@
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 <!-- ------------------Banner4  end ------------------------>
 
@@ -347,8 +347,8 @@
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/24fb4f53-ba07-46fa-934e-bcb35b0cc021/nike-just-do-it.jpg" alt="IMG-BANNER" class="ban_img">
-
+						<!-- <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/24fb4f53-ba07-46fa-934e-bcb35b0cc021/nike-just-do-it.jpg" alt="IMG-BANNER" class="ban_img"> -->
+						<img src="{% static 'images/sub/bcb14506988d48d3119c15.jpg' %}" alt="IMG-BANNER" class="ban_img">
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
@@ -372,8 +372,8 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/f33275db-0cbb-406a-8ac9-430ff07433b7/nike-just-do-it.jpg"  alt="IMG-BANNER" class="ban_img">
-
+						<!-- <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/f33275db-0cbb-406a-8ac9-430ff07433b7/nike-just-do-it.jpg"  alt="IMG-BANNER" class="ban_img"> -->
+						<img src="{% static 'images/sub/ef6f3910e49b34c56d8a6.jpg' %}" alt="IMG-BANNER" class="ban_img">
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
@@ -397,8 +397,8 @@
 				
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/f33275db-0cbb-406a-8ac9-430ff07433b7/nike-just-do-it.jpg"  alt="IMG-BANNER" class="ban_img">
-
+						<!-- <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/f33275db-0cbb-406a-8ac9-430ff07433b7/nike-just-do-it.jpg"  alt="IMG-BANNER" class="ban_img"> -->
+						<img src="{% static 'images/sub/94f46f87b20c62523b1d5.jpg' %}" alt="IMG-BANNER" class="ban_img">
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
@@ -434,18 +434,13 @@
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/0bafb728-2ae2-416f-bb18-5935801c8071/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img">
-
+						<!-- <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/0bafb728-2ae2-416f-bb18-5935801c8071/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img"> -->
+						<img src="{% static 'images/sub/536d36eeeb653b3b627419.jpg' %}" alt="IMG-BANNER" class="ban_img">
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
 							<br><br><br><br><br>
-						
-							
-
 							<br>
-							
-
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
@@ -459,8 +454,8 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/2c8754ce-6287-4e77-a198-1ad483fba257/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img">
-
+						<!-- <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/2c8754ce-6287-4e77-a198-1ad483fba257/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img"> -->
+						<img src="{% static 'images/sub/536d36eeeb653b3b627419.jpg' %}" alt="IMG-BANNER" class="ban_img">
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
@@ -482,8 +477,8 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/414db494-7ebc-4d53-bbff-58d50b380a24/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img">
-
+						<!-- <img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/414db494-7ebc-4d53-bbff-58d50b380a24/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img"> -->
+						<img src="{% static 'images/sub/536d36eeeb653b3b627419.jpg' %}" alt="IMG-BANNER" class="ban_img">
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>

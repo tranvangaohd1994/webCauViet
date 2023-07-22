@@ -13,7 +13,7 @@ def slides():
     for i in items:
         items_div += """
         <div class="item-slick1 item2-slick1" style="background-image: url(/media/{});">
-            <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+            <div class="wrap-content-slide1 sizefull flex-col-c-b">
                 <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn" style="color:#FFEB3B">{}</span>
                 <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn" style="color:#FFEB3B">{}</h2>
                 <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">

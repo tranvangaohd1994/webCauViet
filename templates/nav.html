@@ -54,32 +54,32 @@
 				<div class="wrap_menu">
 					<nav class="menu">
 						<ul class="main_menu">
-							<!-- <li>
-								<a href="/">Home</a>
-
+							<li>
+								<a href="/">Thông tin công ty</a>
 							</li>
 
-							<li>
+							<!-- <li>
 								<a href="/shop/">Shop</a>
 							</li> -->
 
 							{% categories %}
 
 							{% if request.user.is_authenticated %}
-							<li>
-								<a href="{% url 'core:order-summary' %}">Cart<span class="badge badge-dark">{{ request.user|cart_item_count }}</span></a>
-							</li>
-							<li>
-								<a href="{% url 'account_logout' %}">Logout</a>
-							</li>
+								<li>
+									<a href="{% url 'core:order-summary' %}">Cart<span class="badge badge-dark">{{ request.user|cart_item_count }}</span></a>
+								</li>
+								
+								<li>
+									<a href="{% url 'account_logout' %}">Logout</a>
+								</li>
 							{% else %}
-							<li>
-								<a href="#">Login</a>
-								<ul class="sub_menu">
-									<li><a href="{% url 'account_login' %}">Login</a></li>
-									<li><a href="{% url 'account_signup' %}">SignUp</a></li>
-								</ul>
-							</li>
+								<li>
+									<a href="#">Login</a>
+									<ul class="sub_menu">
+										<li><a href="{% url 'account_login' %}">Login</a></li>
+										<li><a href="{% url 'account_signup' %}">SignUp</a></li>
+									</ul>
+								</li>
 							{% endif %}
 						</ul>
 					</nav>
