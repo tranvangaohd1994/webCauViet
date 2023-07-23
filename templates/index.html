@@ -3,90 +3,91 @@
 {% load category_template_tags %}
 {% load slide_template_tags %}
 {% block content %}
-<style>
-	/*[ Block2 ]
-///////////////////////////////////////////////////////////
-*/
-.block2-labelpromotion::before,
-.block2-labelsale::before,
-.block2-labelnew::before 
-{
-  z-index: 100;
-  font-family: Montserrat-Regular;
-  font-size: 12px;
-  color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 22px;
-  border-radius: 11px;
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
+	<style>
+		/*[ Block2 ]
+	///////////////////////////////////////////////////////////
+	*/
+	.block2-labelpromotion::before,
+	.block2-labelsale::before,
+	.block2-labelnew::before 
+	{
+	z-index: 100;
+	font-family: Montserrat-Regular;
+	font-size: 12px;
+	color: white;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 22px;
+	border-radius: 11px;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	}
 
-.block2-labelsale::before {
-  background-color: white;
-  color: #000;
-  content: 'Sale';
-}
+	.block2-labelsale::before {
+	background-color: white;
+	color: #000;
+	content: 'Sale';
+	}
 
-.block2-labelnew::before {
-  background-color: #007bff;
-  content: 'New';
-}
+	.block2-labelnew::before {
+	background-color: #007bff;
+	content: 'New';
+	}
 
-.block2-labelpromotion::before{
-	background-color: #000;
-	content: 'Promotion';
-	width: 70px;
-  }
+	.block2-labelpromotion::before{
+		background-color: #000;
+		content: 'Promotion';
+		width: 70px;
+	}
 
-  .btn-dark {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
-}
+	.btn-dark {
+		color: #fff;
+		background-color: #000;
+		border-color: #000;
+	}
 
-.btn-outline-dark {
-    color: #000;
-    border-color: #000;
-}
+	.btn-outline-dark {
+		color: #000;
+		border-color: #000;
+	}
 
 
-</style>
-<div class="container">
-	<div class="row">
-	  <div class="col-lg-4">
-		<h2><strong>Lời ngỏ</strong></h2><br>
-		<h4><strong>Quý khách hàng thân mến!</strong></h4><br>
-		<h6  style="text-align:justify"> 
-			<b>CÔNG TY CỔ PHẦN SX VÀ TM DANH THẮNG</b> xin gửi lời chào trân trọng nhất đến quý khách hàng cùng các đối tác đã và đang  quan  tâm  đặc biệt  đến  sản  phẩm và dịch vụ sản xuất găng tay, túi đựng thực phẩm của Công ty chúng tôi trong suốt thời gian qua.
-			Lĩnh vực hoạt động chính của chúng tôi chuyên về lĩnh vực sản xuất găng tay, túi đựng thực phẩm kích thước theo yêu cầu. 
-			Với phương châm <b>“UY TÍN - CHẤT LƯỢNG”</b> là nền tảng chiến lược cho sự phát triển bền vững và lâu dài của chúng tôi. 
-			Cùng với đội ngũ nhân viên nhiệt tình, giàu kinh nghiệm, cơ sở vật chất hiện đại chúng tôi đảm bảo sẽ mang đến cho Quý khách hàng những sản phẩm và dịch vụ tốt nhất với chi phí hợp lý. Chúng tôi hy vọng sẽ được hợp tác cùng Quý khách hàng. 
-			Sự ủng hộ của Quý khách hàng, Quý đối tác là nguồn động viên lớn và là động lực cho sự phát triển của Công ty chúng tôi. 
-			Công ty chúng tôi xin cảm ơn sự hợp tác, tin tưởng sử dụng sản phẩm của quý khách hàng và mong muốn được phục vụ Quý khách hàng ngày càng nhiều hơn, tận tình và chu đáo hơn nữa.
+	</style>
+	
+	<div class="banner bgwhite p-t-40 p-b-40 p-l-40">
+		<div class="row">
+		<div class="col-lg-4">
+			<h2><strong>Lời ngỏ</strong></h2><br>
+			<h4><strong>Quý khách hàng thân mến!</strong></h4><br>
+			<h6  style="text-align:justify"> 
+				<b>CÔNG TY CỔ PHẦN SX VÀ TM DANH THẮNG</b> xin gửi lời chào trân trọng nhất đến quý khách hàng cùng các đối tác đã và đang  quan  tâm  đặc biệt  đến  sản  phẩm và dịch vụ sản xuất găng tay, túi đựng thực phẩm của Công ty chúng tôi trong suốt thời gian qua.
+				Lĩnh vực hoạt động chính của chúng tôi chuyên về lĩnh vực sản xuất găng tay, túi đựng thực phẩm kích thước theo yêu cầu. 
+				Với phương châm <b>“UY TÍN - CHẤT LƯỢNG”</b> là nền tảng chiến lược cho sự phát triển bền vững và lâu dài của chúng tôi. 
+				Cùng với đội ngũ nhân viên nhiệt tình, giàu kinh nghiệm, cơ sở vật chất hiện đại chúng tôi đảm bảo sẽ mang đến cho Quý khách hàng những sản phẩm và dịch vụ tốt nhất với chi phí hợp lý. Chúng tôi hy vọng sẽ được hợp tác cùng Quý khách hàng. 
+				Sự ủng hộ của Quý khách hàng, Quý đối tác là nguồn động viên lớn và là động lực cho sự phát triển của Công ty chúng tôi. 
+				Công ty chúng tôi xin cảm ơn sự hợp tác, tin tưởng sử dụng sản phẩm của quý khách hàng và mong muốn được phục vụ Quý khách hàng ngày càng nhiều hơn, tận tình và chu đáo hơn nữa.
 
-		</h6>
-	  </div>
-	  <div class="col-lg-8">
-		<!-- Slide1 -->
-			<section class="slide1">
-				<div class="wrap-slick1">
-					<div class="slick1">
-						{% slides %}
+			</h6>
+		</div>
+		<div class="col-lg-8">
+			<!-- Slide1 -->
+				<section class="slide1">
+					<div class="wrap-slick1">
+						<div class="slick1">
+							{% slides %}
+						</div>
 					</div>
-				</div>
-			</section>
-	  </div>
+				</section>
+		</div>
+		</div>
 	</div>
-</div>
 
 	<!-- Category start -->
 	<style>
@@ -96,39 +97,40 @@
 			
 		}
 	</style>
+	
 	<section class="banner bgwhite p-t-40 p-b-40">
-		<div class="container">
-			<div class="row">
+			<div class="container">
+				<div class="row">
 
-				{% categories_div %}
+					{% categories_div %}
 
-<!--				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">-->
-<!--					-->
-<!--					<div class="block1 hov-img-zoom pos-relative m-b-30">-->
-<!--						<img src="{% static 'images/banner-02.webp' %}" alt="IMG-BENNER">-->
-<!--						<div class="block1-wrapbtn w-size2">-->
-<!--							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">-->
-<!--								Dresses-->
-<!--							</a>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					-->
-<!--					<div class="block1 hov-img-zoom pos-relative m-b-30">-->
-<!--						<img src="{% static 'images/banner-05.webp' %}" alt="IMG-BENNER">-->
-<!--						<div class="block1-wrapbtn w-size2">-->
-<!--							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">-->
-<!--								Sunglasses-->
-<!--							</a>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					-->
-<!--				</div>-->
-
-
+	<!--				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">-->
+	<!--					-->
+	<!--					<div class="block1 hov-img-zoom pos-relative m-b-30">-->
+	<!--						<img src="{% static 'images/banner-02.webp' %}" alt="IMG-BENNER">-->
+	<!--						<div class="block1-wrapbtn w-size2">-->
+	<!--							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">-->
+	<!--								Dresses-->
+	<!--							</a>-->
+	<!--						</div>-->
+	<!--					</div>-->
+	<!--					-->
+	<!--					<div class="block1 hov-img-zoom pos-relative m-b-30">-->
+	<!--						<img src="{% static 'images/banner-05.webp' %}" alt="IMG-BENNER">-->
+	<!--						<div class="block1-wrapbtn w-size2">-->
+	<!--							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">-->
+	<!--								Sunglasses-->
+	<!--							</a>-->
+	<!--						</div>-->
+	<!--					</div>-->
+	<!--					-->
+	<!--				</div>-->
 
 
+
+
+				</div>
 			</div>
-		</div>
 	</section>
 
 	<!-- New Product -->
@@ -138,6 +140,7 @@
 			padding-bottom: 2px;
 		}
 	</style>
+
 	<section class="newproduct bgwhite p-t-45 p-b-105">
 		<div class="container">
 			<div class="sec-title p-b-60">
@@ -160,14 +163,14 @@
 								<a href="{{item.get_absolute_url}}">
 								<img src="{{ item.image.url }}" alt="IMG-PRODUCT" 
 								style="height: 370px; width:100%; "></a>
-							   
+								
 
 								<!-- <div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
 										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
 										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
 									</a>
-	
+
 									
 								</div> -->
 							</div>
@@ -300,46 +303,15 @@
 			</div>
 		</div>
 	</section>
-	<!-- ------------------Banner2  start ------------------------>
 
-	<!-- ------------------Banner4  start ------------------------>
-<!-- Slide1 -->
-
-<style>
-	.slide1 button:hover{
-		background-color: white !important;
-		color: black;
-	}
-</style>
-<br><br>
-
-<!-- <section class="slide1">
-	<div class="wrap-slick2">
-		<div class="slick1">
-			<div class="item-slick1 item2-slick1" style="background-image: url('https://static.nike.com/a/images/f_auto/dpr_2.0/w_1407,c_limit/a01665bf-08e7-4d5d-8fb6-841382e3f900/nike-just-do-it.jpg');">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center   m-b-15" data-appear="rollIn">
-							Nike ZoomX Vaporfly NEXT%
-						</span>
-						<h2 class="caption2-slide1 xl-text1 t-center   m-b-37" data-appear="lightSpeedIn">
-							FAST IS BACK
-						</h2>
-						<div class="wrap-btn-slide1 w-size1 " data-appear="slideInUp">
-							
-							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
-							</a>
-						</div>
-					</div>
-				</div>
-
-		</div>
-	</div>
-</section> -->
-
-<!-- ------------------Banner4  end ------------------------>
-
-	<!-- ------------------Banner3  start ------------------------>
+	<style>
+		.slide1 button:hover{
+			background-color: white !important;
+			color: black;
+		}
+	</style>
+	
+	<br><br>
 
 	<section class="banner2 bg5 p-t-55 p-b-55">
 		<h4 style="font-weight: 500;">Training's Essentials</h4>
@@ -424,10 +396,8 @@
 			</div>
 		</div>
 	</section>
-	<!-- ------------------Banner3  end ------------------------>
-
+	
 	<!-- ------------------Banner5  start ------------------------>
-
 	<section class="banner2 bg5 p-t-55 p-b-55">
 		<h4 style="font-weight: 500;">More Products</h4>
 		<div class="">
@@ -501,11 +471,8 @@
 			</div>
 		</div>
 	</section>
+	
 	<!-- ------------------Banner2  start ------------------------>
-
-
-	
-	
 
 	<!-- Shipping -->
 	<section class="shipping bgwhite p-t-62 p-b-46">
@@ -542,12 +509,7 @@
 		</div>
 	</section>
 
-
-
-
-	
-
-	{% endblock content %}
+{% endblock content %}
 
 
 	

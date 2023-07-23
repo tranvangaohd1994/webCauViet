@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+"></script>
+
+<div class="banner bgwhite p-t-40 p-b-40 p-l-5">
+  <div class="d-flex align-items-start" style="padding-left: 5px">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs  flex-column" role="tablist" style="padding-right: 5px">
+      
+        <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="infor-tab" data-bs-toggle="tab" data-bs-target="#infor" 
+        type="button" role="tab" aria-controls="infor" aria-selected="true" style="width: 200px;text-align: left; ;">Thông tin công ty</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="cosophaply-tab" data-bs-toggle="tab" data-bs-target="#cosophaply" 
+        type="button" role="tab" aria-controls="cosophaply" aria-selected="false" style="width: 200px;text-align: left;" >Cơ sở pháp lý</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sodotochuc-tab" data-bs-toggle="tab" data-bs-target="#sodotochuc" 
+        type="button" role="tab" aria-controls="sodotochuc" aria-selected="false" style="width: 200px;text-align: left;">Sơ đồ tổ chức</button>
+      </li>
+      <li class="nav-item" role="quytrinhsx">
+        <button class="nav-link" id="quytrinhsx-tab" data-bs-toggle="tab" data-bs-target="#quytrinhsx" 
+        type="button" role="tab" aria-controls="quytrinhsx" aria-selected="false"style="width: 200px;text-align: left;">Quy trình sản xuất</button>
+      </li>
+    </ul>
+                
+    <!-- Tab panes -->
+    <div class="tab-content">
+     
+        <div class="tab-pane fade show active" id="infor" role="tabpanel" aria-labelledby="infor-tab" tabindex="0">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-4">
+                    <h2><strong>Lời ngỏ</strong></h2><br>
+                    <h4><strong>Quý khách hàng thân mến!</strong></h4><br>
+                    <h6  style="text-align:justify"> 
+                        <b>CÔNG TY CỔ PHẦN SX VÀ TM DANH THẮNG</b> xin gửi lời chào trân trọng nhất đến quý khách hàng cùng các đối tác đã và đang  quan  tâm  đặc biệt  đến  sản  phẩm và dịch vụ sản xuất găng tay, túi đựng thực phẩm của Công ty chúng tôi trong suốt thời gian qua.
+                        Lĩnh vực hoạt động chính của chúng tôi chuyên về lĩnh vực sản xuất găng tay, túi đựng thực phẩm kích thước theo yêu cầu. 
+                        Với phương châm <b>“UY TÍN - CHẤT LƯỢNG”</b> là nền tảng chiến lược cho sự phát triển bền vững và lâu dài của chúng tôi. 
+                        Cùng với đội ngũ nhân viên nhiệt tình, giàu kinh nghiệm, cơ sở vật chất hiện đại chúng tôi đảm bảo sẽ mang đến cho Quý khách hàng những sản phẩm và dịch vụ tốt nhất với chi phí hợp lý. Chúng tôi hy vọng sẽ được hợp tác cùng Quý khách hàng. 
+                        Sự ủng hộ của Quý khách hàng, Quý đối tác là nguồn động viên lớn và là động lực cho sự phát triển của Công ty chúng tôi. 
+                        Công ty chúng tôi xin cảm ơn sự hợp tác, tin tưởng sử dụng sản phẩm của quý khách hàng và mong muốn được phục vụ Quý khách hàng ngày càng nhiều hơn, tận tình và chu đáo hơn nữa.
+        
+                    </h6>
+                    <h6>
+                        <br>CÔNG TY CỔ PHẦN SX VÀ TM DANH THẮNG được thành lập theo Giấy phép kinh doanh số  0110353495 do sở Kế hoạch và đầu tư Thành Phồ Hà Nội cấp.
+                        <br><br>Tên Công ty: CÔNG TY CỔ PHẦN SX VÀ TM DANH THẮNG
+                        <br><br>Tên viết tắt: DANHTHANG PRODUCTION AND TRADING JOINT STOCK COMPANY
+                        <br><br>Trụ sở chính: Số 3, Ngõ 270/31 Thôn Giao Tất, Xã Kim Sơn,Huyện Gia Lâm, Thành Phồ Hà Nội, Việt Nam
+                        <br><br>Mã số thuế: 0110353495 
+                        <br><br>Người ĐDPL: Nguyễn Hữu Tú - Giám đốc
+                        <br><br>Hotline: 0986 891628
+                    </h6>
+
+                </div>
+                <div class="col-lg-8">
+                        <div class="pos-relative">
+                            <img src="{% static 'images/sub/94f46f87b20c62523b1d5.jpg' %}" alt="IMG-BANNER" class="ban_img">
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+      
+      
+        <div class="tab-pane fade" id="cosophaply" role="tabpanel" aria-labelledby="cosophaply-tab" tabindex="0">
+            <div class="pos-relative">
+                <img src="{% static 'images/cosophaply1.png' %}" alt="IMG-BANNER" class="ban_img">
+                <img src="{% static 'images/cosophaply2.png' %}" alt="IMG-BANNER" class="ban_img">
+                <img src="{% static 'images/cosophaply3.png' %}" alt="IMG-BANNER" class="ban_img">
+                <img src="{% static 'images/cosophaply4.png' %}" alt="IMG-BANNER" class="ban_img">
+                <img src="{% static 'images/cosophaply5.png' %}" alt="IMG-BANNER" class="ban_img">
+            </div>
+        </div>
+        
+        
+        <div class="tab-pane fade" id="sodotochuc" role="tabpanel" aria-labelledby="sodotochuc-tab" tabindex="0">
+            <div class="pos-relative">
+                <img src="{% static 'images/sodotochuc.png' %}" alt="IMG-BANNER" class="ban_img">
+            </div><br><br>
+            <h5>Tầm nhìn của chúng tôi</h5><br><br>
+
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="pos-relative">
+                            <img src="{% static 'images/tamnhin.png' %}" alt="IMG-BANNER" class="ban_img">
+                        </div><br>
+                        <p> 
+                            Trở thành công ty hàng đầu trong lĩnh  vực sản xuất găng tay, 
+                            túi đựng thực phẩm tại Việt Nam, đồng hành cùng khách hàng trong việc cung cấp các giải pháp vệ sinh và thân thiện với môi trường
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="pos-relative">
+                            <img src="{% static 'images/sumenh.png' %}" alt="IMG-BANNER" class="ban_img">
+                        </div><br>
+                        <p> 
+                            Cung cấp các sản phẩm găng tay, túi đựng thực phẩm chất lượng cao giải pháp vệ sinh tối ưu cho khách hàng của mình, 
+                            đồng thời thúc đẩy sản xuất, đóng góp vào sự phát triển bền vững của cộng đồng và môi trường.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="pos-relative">
+                            <img src="{% static 'images/dinhhuong.png' %}" alt="IMG-BANNER" class="ban_img">
+                        </div><br>
+                        <p> 
+                            Nỗ lực để khách hàng hài lòng thông qua quá trình cải tiến liên tục chất lượng sản phẩm và dịch vụ, 
+                            theo triết lý kinh doanh " better than yesterday" - luôn luôn đổi mới sáng tạo, không ngừng phát triển.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="tab-pane fade" id="quytrinhsx" role="tabpanel" aria-labelledby="quytrinhsx-tab" tabindex="0">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-4">
+                    <h2><strong>Bước 1: Nhập NVL về kho bãi chứa NVL</strong></h2><br>
+                    <h6>
+                        <br> Quá trình nhập NVL là khâu quan trọng để sản xuất ra găng tay và các sản phẩm khác đạt tiêu chuẩn chất lượng.
+                        <br>NVL đầu vào  được QC tiến hành kiểm tra như sau
+                        <br>QC tiến hành kiểm tra hạt HDPF, LLD  xem có nguyên sinh không và đếm số liệu thực nhận ghi sổ Nhập kho
+                    </h6>
+
+                </div>
+                <div class="col-lg-8">
+                        <div class="pos-relative">
+                            <img src="{% static 'images/quytrinh1.png' %}" alt="IMG-BANNER" class="ban_img">
+                        </div>
+                </div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2><strong>Bước 2: Xếp NVL vào máy trộn</strong></h2><br>
+                        <h6><br>  
+                            Công nhân thao tác dùng xe nâng tay hoặc thợ lái xe nâng máy luân chuyển nguyên vật liệu  vào máy trộn,  chuyển qua máy thổi tạo thành các cuộn màng
+                        </h6>
+                    </div>
+                    <div class="col-lg-8">
+                            <div class="pos-relative">
+                                <img src="{% static 'images/quytrinh2.png' %}" alt="IMG-BANNER" class="ban_img">
+                            </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+
+
+
+	

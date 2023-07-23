@@ -134,6 +134,11 @@ class ItemDetailView(DetailView):
     model = Item
     template_name = "product-detail.html"
 
+class InforCompanyView(ListView):
+    # model = Item
+    # template_name  = "infor_company.html"
+    def get(self, *args, **kwargs):
+        return render(self.request, "infor_company.html")
 
 # class CategoryView(DetailView):
 #     model = Category
@@ -208,28 +213,6 @@ class CheckoutView(View):
         except ObjectDoesNotExist:
             messages.error(self.request, "You do not have an active order")
             return redirect("core:order-summary")
-
-
-# def home(request):
-#     context = {
-#         'items': Item.objects.all()
-#     }
-#     return render(request, "index.html", context)
-#
-#
-# def products(request):
-#     context = {
-#         'items': Item.objects.all()
-#     }
-#     return render(request, "product-detail.html", context)
-#
-#
-# def shop(request):
-#     context = {
-#         'items': Item.objects.all()
-#     }
-#     return render(request, "shop.html", context)
-
 
 @login_required
 def add_to_cart(request, slug):
